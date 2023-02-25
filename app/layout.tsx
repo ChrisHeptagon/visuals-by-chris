@@ -1,4 +1,5 @@
-import './globals.css'
+import ResponsiveHeader from '@/components/header'
+import 'public/globals.css'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ResponsiveHeader/>
+      {children}
+      </body>
     </html>
   )
 }
